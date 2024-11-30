@@ -1,0 +1,11 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.frame {
+    background-color: rgb(243, 239, 234);
+    color: blue;
+    font-size: 20px;
+}

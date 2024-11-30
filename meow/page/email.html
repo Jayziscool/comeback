@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="../css/email.css">
+    <link rel="icon" type="image/x-icon" href="../img/icons8-email-48.png">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="frame">
+            <pre id="htl1">
+Dear Lodging Partner,
+We are writing to you regarding the following Expedia reservation.
+
+Guest name: 
+Check-in: 
+Check-out: 
+Expedia Booking ID: 
+Hotel confirmation ID: 
+
+Please reply to this email with your name and job title.
+Thank you for partnering with us.
+Best regards,
+Jay Zhang
+Expedia Customer Travel Services
+</pre>
+
+        </div>
+        <div class="frame">
+            <pre id="htl2">
+亲爱的合作伙伴,
+我们正在咨询关于以下Expedia订单的信息。
+
+入住人姓名:
+入住日期:
+退房日期:
+Expedia预定编号:
+酒店确认ID:
+
+邮件时回复劳烦附上您的姓名及职位名称，以便我们参考和记录。
+感谢您与我们合作。
+感谢并致以诚挚的祝福，
+Jay Zhang
+Expedia Customer Travel Services
+</pre>
+
+        </div>
+        <div class="frame">
+            <pre id="ean">
+尊敬的​，你好
+感谢您有关订单的咨询。
+旅行社订单号:
+
+如您有任何问题或查询，请以相同主题回复此邮件。
+感谢您与我们合作。
+谨启
+Jay Zhang
+Expedia Partner Solutions
+</pre>
+
+        </div>
+        <div class="frame">
+            <pre id="taap">
+尊敬的，您好
+感谢联系Expedia咨询相关事宜。
+行程编号:
+
+如您有任何问题或查询，请以相同主题回复此邮件。
+感谢您与我们合作。
+谨启
+Jay Zhang
+Expedia TAAP支援
+</pre>
+
+        </div>
+        <div class="frame">
+            <pre id="ecom">
+尊敬的，您好
+感谢联系Expedia咨询相关事宜。
+行程编号:
+
+如您有任何问题或查询，请以相同主题回复此邮件。
+感谢您与我们合作。
+谨启
+Jay Zhang
+Expedia旅游顾问
+</pre>
+
+        </div>
+        <div class="frame">
+            <pre id="hcom">
+尊敬的，您好
+感谢联系Hotels.com咨询相关事宜。
+行程编号:
+
+如您有任何问题或查询，请以相同主题回复此邮件。
+感谢您与我们合作。
+谨启
+Jay Zhang
+hotels.com旅游顾问
+</pre>
+
+        </div>
+        <div>
+
+
+            <script>
+                let htl1 = document.getElementById('htl1').innerHTML;
+                let htl2 = document.getElementById('htl2').innerHTML;
+                let ean = document.getElementById('ean').innerHTML;
+                let taap = document.getElementById('taap').innerHTML;
+                let ecom = document.getElementById('ecom').innerHTML;
+                let hcom = document.getElementById('hcom').innerHTML;
+                const copyContent = async () => {
+                    try {
+                        await navigator.clipboard.writeText(text);
+                        console.log('Content copied to clipboard');
+                    } catch (err) {
+                        console.error('Failed to copy: ', err);
+                    }
+                }
+            </script>
+</body>
+
+</html>
